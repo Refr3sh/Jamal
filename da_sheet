@@ -1,8 +1,0 @@
-
-Move-Item \\gbhgmercser0021\pdg\mine\testme.txt -Destination $env:UserProfile -Force
-Set-Location "$env:UserProfile"
-Move-Item .\testme.txt -Destination $env:HomeShare -Force
-pause
-
-
-<#      $tes=(Get-ChildItem $env:HomeShare).Value     #>
