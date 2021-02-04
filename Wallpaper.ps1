@@ -74,4 +74,5 @@ public class Params
     $ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, $Image, $fWinIni)
 }
  
-Set-WallPaper -Image "C:\Wallpaper\Background.jpg" -Style Fit
+Write-Output 'Set-WallPaper -Image "C:\Wallpaper\Background.jpg" -Style Fit'
+Write-Output 'Styles: Fill, Fit, Stretch, Tile, Center, or Span'
