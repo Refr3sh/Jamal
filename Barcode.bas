@@ -1,3 +1,5 @@
+Option Explicit:      DefLng A-Z
+
 Public Sub Barcodes()
     On Error GoTo ErrorExit
     Dim lLastRow As Long
@@ -5,6 +7,10 @@ Public Sub Barcodes()
     Dim sCol     As String
     Dim xlSheet1 As Worksheet
     Dim xlSheet2 As Worksheet
+
+    If ActiveWorkbook.ActiveSheet.Range("A1").Value2 = vbNullString Then
+        MsgBox "Please open a .csv file first!", vbCritical + vbOKOnly
+    End If
 
     LudicrousMode True
 
