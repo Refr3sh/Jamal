@@ -10,6 +10,7 @@ Public Sub Barcodes()
 
     If ActiveWorkbook.ActiveSheet.Range("A1").Value2 = vbNullString Then
         MsgBox "Please open a .csv file first!", vbCritical + vbOKOnly
+        Exit Sub
     End If
 
     LudicrousMode True
